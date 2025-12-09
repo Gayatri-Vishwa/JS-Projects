@@ -1,0 +1,101 @@
+
+
+
+
+/* Background setup */
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Center box */
+.container {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  width: 550px;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Title */
+h1 {
+  color: #00b4d8;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Text area */
+.text-area {
+  width: 100%;
+  height: 130px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 10px;
+  padding: 12px;
+  background: #2c2c2c;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+}
+
+.text-area::placeholder {
+  color: #aaa;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.speak {
+  background: #00b4d8;
+  color: white;
+}
+
+.speak:hover {
+  background: #0096c7;
+}
+
+.stop {
+  background: #ef233c;
+  color: white;
+}
+
+.stop:hover {
+  background: #d90429;
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

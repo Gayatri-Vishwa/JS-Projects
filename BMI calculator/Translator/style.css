@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: bisque;
+}
+
+.container
+{
+    background-color: rgb(42, 42, 206);
+    height:800px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+  
+}
+
+.box1{
+    height: 60px;
+    margin-top: 5px;
+
+}
+.box
+{
+    width: 590px;
+    height: 710px;
+    background-color: rgb(4, 16, 61);
+      border-radius: 9px;
+    
+
+
+}
+.box2{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(29, 4, 131);
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+input
+{
+    width: 260px;
+    height: 360px;
+    
+}
+.box3{
+    display: flex;
+    justify-content: space-around;
+}
