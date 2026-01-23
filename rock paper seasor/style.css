@@ -1,14 +1,21 @@
-*{
+
+
+
+    *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-align: center;
 }
+
 h1{
     background-color: #081b31;
     color: #fff;
     height: 5rem;
     line-height: 5rem;
 }
+
+/* Choices */
 .choice{
     height: 165px;
     width: 165px;
@@ -17,25 +24,29 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
 .choice:hover{
     cursor: pointer;
-background-color: #081b31
+    background-color: #081b31;
 }
 
 img{
-height: 150px;
+    height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
+
 .choices{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     margin-top: 5rem;
+    flex-wrap: wrap; /* ✅ mobile wrap */
 }
 
+/* Score board */
 .score-board{
     display: flex;
     justify-content: center;
@@ -43,19 +54,67 @@ height: 150px;
     font-size: 2rem;
     margin-top: 3rem;
     gap: 5rem;
+    flex-wrap: wrap; /* ✅ mobile wrap */
+}
+
+#user-score, 
+#comp-score{
+    font-size: 4rem;
+}
+
+/* Message */
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 5rem;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+
+/* =======responsive====== */
+
+@media (max-width: 600px) {
+
+    h1{
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
     }
-    #user-score, #comp-score{
-        font-size: 4rem;
+
+    .choice{
+        height: 120px;
+        width: 120px;
     }
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .choices{
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .score-board{
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #user-score,
+    #comp-score{
+        font-size: 3rem;
+    }
+
     #msg{
-        background-color: #081b31;
-        color: #fff;
-        font-size: 2rem;
-        margin-top: 5rem;
-        display: inline;
-        padding: 1rem;
-        border-radius: 1rem;
+        font-size: 1.2rem;
+        padding: 0.7rem 1rem;
     }
-    .msg-container{
-        margin-top: 5rem;
-    }
+}
