@@ -34,6 +34,10 @@ const result =document.querySelector(".results");
 
 // }
 
+});
+
+
+
 
 
 const bmi=(weight/(height/100)**2).toFixed(2);
@@ -75,13 +79,6 @@ result.innerHTML=`${bmi} , <span>Overweight</span>
 
 
 
-
-
-
-
-
-
-});
 
 
 
